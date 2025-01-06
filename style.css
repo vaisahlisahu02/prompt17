@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+   display: flex;
+   justify-content: center;
+   padding: 8rem;
+}
+
+
+form{
+    box-shadow: 0px 4px 6px black;
+    background: rgb(3, 80, 84);
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    padding: 10px 40px;
+}
+
+form h1{
+   text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+   color: white;
+ padding: 10px;
+ 
+ 
+}
+.input-content{
+padding: 8px 40px ;
+display: flex;
+
+}
+.input-content input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 0.9rem 3rem;
+font-size: 16px;
+transition: all0.3s ease;
+}
+.invalid-text {
+    display: block;
+    color: rgb(255, 150, 150);
+}
+
+input:invalid + .invalid-text {
+    display:none;
+}
+
+input:valid, select:valid, textarea:valid {
+    border: 2px solid green;
+    background-color: #d4edda; 
+}
+input:invalid, select:invalid, textarea:invalid {
+    border: 2px solid red;
+}
+input:required:empty {
+    border: 2px solid orange;
+}
+.input-content textarea{
+
+padding: 1rem 4rem;
+font-size: 16px;
+border-radius: 10px;
+}
+.submit-container{
+  text-align: center;
+
+  padding: 10px 30px;
+}
+.submit-container .submit-btn{
+   padding:15px 30px;
+    font-size: 16px;
+    display: inline;
+color: white;
+    border-radius: 10px;
+background-color: rgb(100, 220, 100);
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: orange;
+    
+}
+h2{
+   display: none;
+}
